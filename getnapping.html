@@ -6,9 +6,17 @@
 </head>
 <body>
 <script src="menubar/menubar.js"></script>
+<script src="geo-code/destination.js"></script>
 
-<div class="content">
-    <h2>This is the NapMap Page. It should have the map, and a place to add a alarm. </h2>
+
+<div style="padding:0 16px;">
+  <h1> Where would you like to be woken up?</h1>
+  <p>Address:</p><input id="address"/>
+  <p>City:</p><input id="city"/>
+  <p>State:</p><input id="state"/>
+  <button id="btnSubmit" onclick="doPrint()">Submit</button>
+
+
 </div>
 
 </body>
