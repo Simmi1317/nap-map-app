@@ -7,10 +7,13 @@
     height: 100%;
     background-attachment: fixed; */
 /* } */ */
-  <head>
+<!DOCTYPE html>
+<html>
+<head>
 <style>
 body {
-    background-image: url("https://media.giphy.com/media/FlodpfQUBSp20/giphy.gif");
+    background-color: lightblue;
 }
 </style>
 </head>
+<body>
