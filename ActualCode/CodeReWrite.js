@@ -77,26 +77,26 @@ function firstTest(){
 
       //Finding Conversion Factor For Long Based on Lat
       function findLong(){
-        latFactor = Number(250/364560);
+        latFactor = Number(500/364560);
         absLat = Math.abs(desLat); //Absolute Value of Lat - Needed for Long For Loop
         if (absLat <= 10) {
-            longFactor = Number(250/362464.48);
+            longFactor = Number(500/362464.48);
         } else if (absLat <= 20) {
-            longFactor = Number(250/351518.955);
+            longFactor = Number(500/351518.955);
         } else if (absLat <= 30) {
-            longFactor = Number(250/329942.42);
+            longFactor = Number(500/329942.42);
         } else if (absLat <= 40) {
-            longFactor = Number(250/298359.105);
+            longFactor = Number(500/298359.105);
         } else if (absLat <= 50) {
-            longFactor = Number(250/257692.32);
+            longFactor = Number(500/257692.32);
         } else if (absLat <= 60) {
-            longFactor = Number(250/209146.08);
+            longFactor = Number(500/209146.08);
         } else if (absLat <= 70) {
-            longFactor = Number(250/154177.025);
+            longFactor = Number(500/154177.025);
         } else if (absLat <= 80) {
-            longFactor = Number(250/94455.195);
+            longFactor = Number(500/94455.195);
         } else if (absLat <= 90) {
-            longFactor = Number(250/31813.385);
+            longFactor = Number(500/31813.385);
         }
       }
 
