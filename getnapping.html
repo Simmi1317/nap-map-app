@@ -1,0 +1,51 @@
+<!DOCTYPE html5>
+<html>
+<head>
+  <link rel="stylesheet" href="ActualCode/menubar/menubar.css">
+  <link rel="stylesheet" href="ActualCode/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+<!-- <script src="ActualCode/TheStupidCodeThatMadeMeGoInsane.js"></script> -->
+<!-- <script src="ActualCode/menubar/menubar.js"></script> -->
+<ul class="topnav">
+  <li><a class="active" href="https://simmi1317.github.io/nap-map-app/home.html">Home</a></li>
+  <li><a href="https://simmi1317.github.io/nap-map-app/getnapping.html">Get Napping</a></li>
+  <li class="right"><a href="https://simmi1317.github.io/nap-map-app/aboutnapmap.html">About NapMap</a></li>
+</ul>
+
+<script src="ActualCode/CodeReWrite.js"></script>
+
+
+<script>
+function runProgram(){
+  findDes();
+  trackLoc();
+  firstTest();
+  findLong();
+  createBounds();
+  secondTest();
+  pleaseRing();
+  finalTest();
+}
+</script>
+
+
+  <form action="/action_page.php">
+    You will be alerted one block (250 feet) from this location.<br>
+    Happy Napping!<br><br>
+    Address:<br>
+    <input type="text" id='address'><br>
+    City:<br>
+    <input type="text" id='city'><br>
+    State:<br>
+    <input type="text" id='state'><br>
+    <input type="button" onclick="createURL();" value="Submit"/>
+  </form>
+
+</div>
+
+</body>
+</html>
