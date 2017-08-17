@@ -1,23 +1,51 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html>
 <head>
-  <link rel="stylesheet" href="menubar/menubar.css">
-  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="ActualCode/menubar/menubar.css">
+  <link rel="stylesheet" href="ActualCode/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
+
 <body>
-<script src="menubar/menubar.js"></script>
-<script src="geo-code/destination.js"></script>
+<!-- <script src="ActualCode/TheStupidCodeThatMadeMeGoInsane.js"></script> -->
+<!-- <script src="ActualCode/menubar/menubar.js"></script> -->
+<ul class="topnav">
+  <li><a class="active" href="https://simmi1317.github.io/nap-map-app/home.html">Home</a></li>
+  <li><a href="https://simmi1317.github.io/nap-map-app/getnapping.html">Get Napping</a></li>
+  <li class="right"><a href="https://simmi1317.github.io/nap-map-app/aboutnapmap.html">About NapMap</a></li>
+</ul>
+
+<script src="ActualCode/CodeReWrite.js"></script>
 
 
-<div style="padding:0 20px; text-align:center;">
-  <h1 style="text-align:center; color:black; font-size:25px;"> Let's get napping!</h1>
-    <p style="text-align:center;"> <img src="https://m.popkey.co/00d548/jW6RZ.gif" style="width:270px;height:194px;"> </p>
-  <h2 style="text-align:center; color:black; font-size:20px;"> Where would you like to be woken up?</h2>
-  <p style="text-align:center; color:black; font-size:20px;">Address:</p><input  style="text-align:center;" id="address"/>
-  <p style="text-align:center; color:black; font-size:20px;">City:</p><input  style="text-align:center;" id="city"/>
-  <p style="text-align:center; color:black; font-size:20px;">State:</p><input  style="text-align:center;" id="state"/><br>
- <button  style="text-align:center;" id="btnSubmit" onclick="doPrint()">Submit</button>
-  
+<script>
+function runProgram(){
+  findDes();
+  trackLoc();
+  firstTest();
+  findLong();
+  createBounds();
+  secondTest();
+  pleaseRing();
+  finalTest();
+}
+</script>
+
+
+  <form action="/action_page.php">
+    You will be alerted one block (250 feet) from this location.<br>
+    Happy Napping!<br><br>
+    Address:<br>
+    <input type="text" id='address'><br>
+    City:<br>
+    <input type="text" id='city'><br>
+    State:<br>
+    <input type="text" id='state'><br>
+    <input type="button" onclick="createURL();" value="Submit"/>
+  </form>
+
 </div>
+
 </body>
+</html>
