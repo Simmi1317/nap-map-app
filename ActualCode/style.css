@@ -1,0 +1,22 @@
+body {
+    background-image: url("https://github.com/Simmi1317/nap-map-app/blob/gh-pages/Background(map).jpg?raw=true");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+}
+form {
+  text-align: center;
+  color: white;
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin: -70px 0 0 -170px;
+}
